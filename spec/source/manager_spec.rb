@@ -12,7 +12,7 @@ describe Manager do
     manager.add_person(person1)
     expect(manager.list_persons).to be == [person1]
   end
-  
+
   it 'should delete_person' do
     person1 = Person.new
     person1.name = 'v'
@@ -24,7 +24,7 @@ describe Manager do
     manager.delete_person(0)
     expect(manager.list_persons).to be == [person1]
   end
-  
+
   it 'should show list of persons' do
     manager = Manager.new
     expect(manager.list_persons).to be == []

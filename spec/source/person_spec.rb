@@ -14,4 +14,10 @@ describe Person do
     expect(person.country).to be == 'Rus'
     expect(person.age).to be == 23
   end
+  it 'able to be created by constructor' do
+    person = Person.new('Vasa', 'Rus', 23)
+    expect(person.name).to be == 'Vasa'
+    expect(person.country).to be == 'Rus'
+    expect(person.age).to be == 23
+  end
 end
