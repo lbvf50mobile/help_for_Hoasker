@@ -1,3 +1,3 @@
 # this is a Manger who whields with Persons
-class Manager 
+class Manager
 end

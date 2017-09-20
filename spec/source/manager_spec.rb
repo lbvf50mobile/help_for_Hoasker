@@ -12,6 +12,7 @@ describe Manager do
   end
   
   it 'should show list of persons' do
-    skip
+    manager = Manager.new
+    expect(manager.list_person).to be == []
   end
 end
