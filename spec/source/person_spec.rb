@@ -1,7 +1,7 @@
 require 'spec_helper'
 require 'person'
 
-describe Perso do
+describe Person do
   it 'has name' do
     person = Person.new
     person.name = 'Vasa'
