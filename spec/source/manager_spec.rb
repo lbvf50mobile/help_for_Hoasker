@@ -13,6 +13,6 @@ describe Manager do
   
   it 'should show list of persons' do
     manager = Manager.new
-    expect(manager.list_person).to be == []
+    expect(manager.list_persons).to be == []
   end
 end
