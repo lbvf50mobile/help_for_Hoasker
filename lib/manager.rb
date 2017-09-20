@@ -4,6 +4,10 @@ class Manager
     @people = []
   end
 
+  def delete_person(index)
+    @people.delete_at(index)
+  end
+
   def add_person(person)
     @people.push(person)
   end
