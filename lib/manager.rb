@@ -4,6 +4,10 @@ class Manager
     @people = []
   end
 
+  def add_person(person)
+    @people.push(person)
+  end
+
   def list_persons
     @people
   end
