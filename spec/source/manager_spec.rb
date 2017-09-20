@@ -14,7 +14,15 @@ describe Manager do
   end
   
   it 'should delete_person' do
-    skip
+    person1 = Person.new
+    person1.name = 'v'
+    person1.country = 'c'
+    person1.age = 10
+    manager = Manager.new
+    manager.add_person(person1)
+    manager.add_person(person1)
+    manager.delete_person(0)
+    expect(manager.list_persons).to be == [person1]
   end
   
   it 'should show list of persons' do
