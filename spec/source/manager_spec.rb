@@ -4,7 +4,13 @@ require 'person'
 
 describe Manager do
   it 'should add_person' do
-    skip
+    person1 = Person.new
+    person1.name = 'v'
+    person1.country = 'c'
+    person1.age = 10
+    manager = Manager.new
+    manager.add_person(person1)
+    expect(manager.list_persons).to be == [person1]
   end
   
   it 'should delete_person' do
